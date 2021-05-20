@@ -21,7 +21,7 @@ const desktopNav = (props) => (
         <ul className="flex-s-between">
           <li>
             <Link activeClass="active-link" to="portfolio" spy={true} smooth={true} offset={-70} duration={500}>
-              WORK
+              HOME
             </Link>
           </li>
           <li>

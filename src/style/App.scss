@@ -67,7 +67,7 @@ input,
 button,
 textarea,
 select {
-  font: inherit;
+  font-family: 'Darker Grotesque', sans-serif;
 }
 li {
   list-style: none;
@@ -85,7 +85,7 @@ html {
   font-size: 62.5%; 
 }
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Darker Grotesque', sans-serif;
   color: $black-color;
   font-size: 1.5rem;
   overflow-x: hidden;
@@ -205,7 +205,7 @@ h1,h2,h3,h4,h5,h6 {
   font-size: 1.1rem;
 }
 .font12 {
-  font-size: 1.2rem;
+  font-size: 2.5rem;
 }
 .font13 {
   font-size: 1.3rem;
