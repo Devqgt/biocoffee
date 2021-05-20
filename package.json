@@ -18,16 +18,17 @@
     "react-reveal": "^1.2.2",
     "react-scripts": "3.4.1",
     "react-scroll": "^1.7.16",
+    "serve": "^11.3.2",
     "swiper": "^5.4.0"
   },
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "serve -s build",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
-    },
+  "dev": "react-scripts start",
+  "start": "serve -s build",
+  "build": "react-scripts build",
+  "test": "react-scripts test --env = jsdom ",
+  " eject " :" react-scripts eject ", 
+  " heroku-postbuild ":" npm run build "
+  },
   "eslintConfig": {
     "extends": "react-app"
   },
