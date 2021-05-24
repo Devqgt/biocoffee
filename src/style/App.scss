@@ -30,6 +30,10 @@ dl,
 dd {
   margin: 0;
   font-weight: 500;
+  letter-spacing: 0.3em;
+  font-style: normal;
+  font-weight: normal;
+  text-align: justify;
 }
 
 /* Set core body defaults */
@@ -205,7 +209,7 @@ h1,h2,h3,h4,h5,h6 {
   font-size: 1.1rem;
 }
 .font12 {
-  font-size: 2.5rem;
+  font-size: 1.8rem;
 }
 .font13 {
   font-size: 1.3rem;
@@ -237,6 +241,7 @@ h1,h2,h3,h4,h5,h6 {
 .font60 {
   font-size: 6rem;
   line-height:8rem;
+  font-weight: 800;
 }
 
 p {
@@ -249,3 +254,38 @@ p {
   color: $main-color;
 }
 
+.frase{
+position: absolute;
+width: 331px;
+height: 105px;
+
+font-family: Darker Grotesque;
+font-style: normal;
+font-weight: normal;
+font-size: 28px;
+line-height: 38px;
+text-align: justify;
+letter-spacing: 0.3em;
+
+color: #000000;
+}
+.tittle{
+width: 783px;
+height: 145px;
+
+font-family: Darker Grotesque;
+font-style: normal;
+font-weight: 600;
+font-size: 90px;
+line-height: 84px;
+/* or 94% */
+
+display: flex;
+align-items: flex-end;
+letter-spacing: 0.3em;
+
+color: #000000;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}

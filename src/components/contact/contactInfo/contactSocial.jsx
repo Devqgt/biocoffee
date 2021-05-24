@@ -5,7 +5,7 @@ import "./contactSocial.scss";
 
 import FacebookIcon from "../../../assets/contact/facebook.svg";
 import TwitterIcons from "../../../assets/contact/twitter.svg";
-import DribbleIcon from "../../../assets/contact/dribble.svg";
+import InstagramIcons from "../../../assets/contact/instagram.svg";
 
 
 const contactSocial = () => (
@@ -19,7 +19,7 @@ const contactSocial = () => (
           <img src={TwitterIcons} alt="Twitter" />
         </Col>
         <Col xs={12} lg={1} className="contact__social">
-          <img src={DribbleIcon} alt="Dribble" />
+          <img src={InstagramIcons} alt="Instagram" />
         </Col>
       </Row>
     </Col>

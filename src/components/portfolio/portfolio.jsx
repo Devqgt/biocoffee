@@ -15,7 +15,7 @@ import Preview6 from "../../assets/portfolio/project06/preview.png";
 import Button from "../ui-components/button/button";
 import Title from "../ui-components/title/title";
 import ProjectBox from "../ui-components/projectBox/projectBox";
-
+// jalando por medio de la api 
 class Portfolio extends React.Component {
   constructor(props) {
     super(props);
@@ -24,39 +24,15 @@ class Portfolio extends React.Component {
       projects: [
         {
           id: "1",
-          preview: Preview1,
-          title: "Lamp",
-          tag: "branding",
-        },
-        {
-          id: "2",
           preview: Preview2,
-          title: "Smartwatch",
-          tag: "web",
-        },
-        {
-          id: "3",
-          preview: Preview3,
-          title: "Speakerphone",
-          tag: "illustrations",
-        },
-        {
-          id: "4",
-          preview: Preview4,
-          title: "Sneakers",
-          tag: "web",
-        },
-        {
-          id: "5",
-          preview: Preview5,
-          title: "Label",
-          tag: "illustrations",
+          title: "Icatu 350g",
+          tag: "Coffee",
         },
         {
           id: "6",
           preview: Preview6,
-          title: "lemons",
-          tag: "branding",
+          title: "Bourbun 350g ",
+          tag: "Coffee",
         },
       ],
       // PORTFOLIO GALLERY WILL LOAD THIS AFTER FUNCTION "filterGallery" FINISH FILTERING
@@ -69,7 +45,7 @@ class Portfolio extends React.Component {
 
   // FIRST LOAD
   componentDidMount() {
-    this.filterGallery("all");
+    this.filterGallery("Coffee");
   }
 
   //FILTER PORTFOLIO FUNCTION
@@ -117,7 +93,7 @@ class Portfolio extends React.Component {
     let projectsRender = null;
     if (this.state.filterResult) {
       projectsRender = this.state.filterResult.map((project) => (
-        <ProjectBox preview={project.preview} key={project.id} title={project.title} tag={project.tag} />
+        <ProjectBox preview={project.preview} key={project.id} title={project.title} label={project.label} tag={project.tag} />
       ));
     }
     // PORTFOLIO GALLERY BREAKPOINTS
@@ -145,7 +121,7 @@ class Portfolio extends React.Component {
     return (
       <div id="portfolio">
         <div className="wrapper">
-          <Title title="WORK SHOWCASE." />
+          <Title title="NUESTROS PRODUCTOS." />
           <Row>
             <Col xs={12} sm={12} md={8} lg={9}>
               <div className="portfolio__nav">
@@ -154,19 +130,10 @@ class Portfolio extends React.Component {
                     ALL
                   </li>
                   <li
-                    className={this.state.pickedFilter === "branding" ? "portfolio__nav-active font12" : "font12"}
-                    onClick={() => this.filterGallery("branding")}
+                    className={this.state.pickedFilter === "Coffee" ? "portfolio__nav-active font12" : "font12"}
+                    onClick={() => this.filterGallery("Coffee")}
                   >
-                    BRANDING
-                  </li>
-                  <li
-                    className={this.state.pickedFilter === "illustrations" ? "portfolio__nav-active font12" : "font12"}
-                    onClick={() => this.filterGallery("illustrations")}
-                  >
-                    ILLUSTRATIONS
-                  </li>
-                  <li className={this.state.pickedFilter === "web" ? "portfolio__nav-active font12" : "font12"} onClick={() => this.filterGallery("web")}>
-                    WEB
+                    CAFÉ DE VARIEDAD
                   </li>
                 </ul>
               </div>
@@ -183,7 +150,7 @@ class Portfolio extends React.Component {
             {projectsRender}
           </Masonry>
           <Row className="flex-center padding40">
-            <Button label="HAVE WORK FOR US?" target={"contact"} />
+            <Button label="SOBRE NOSOTROS" target={"about"} />
           </Row>
         </div>
       </div>
