@@ -15,7 +15,7 @@ const mobileNav = (props) => (
       <Link
         to="hero"
         spy={true}
-        
+        smooth={true}
         offset={0}
         duration={500}
         onClick={props.closeMobileMenu}
