@@ -1,15 +1,16 @@
 import React from "react";
-import { Row, Col } from "react-flexbox-grid";
+//import { Row, Col } from "react-flexbox-grid";
 import "./about.scss";
 // Components
-import TeamBox from './teamBox';
-import TeamInfo from "./teamInfo";
-import Title from "../ui-components/title/title";
+//import TeamBox from './teamBox';
+//import TeamInfo from "./teamInfo";
+//import Title from "../ui-components/title/title";
 // Assets
-import Person01 from "../../assets/about/person01.png";
-import Person02 from "../../assets/about/person02.png";
-
-const about = () => (
+//import Person01 from "../../assets/about/person01.png";
+//import Person02 from "../../assets/about/person02.png";
+import { Banner } from './Banner'
+import { Body } from './Body'
+/*const about = () => (
   <div id="about">
     <div className="wrapper">
       <Title title="SOBRE NOSOTROS." />
@@ -35,4 +36,13 @@ const about = () => (
   </div>
 );
 
-export default about;
+export default about;*/
+
+export const About = () => {
+  return (
+    <>
+      <Banner/>
+      <Body/>
+    </>
+  )
+}

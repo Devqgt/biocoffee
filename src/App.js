@@ -1,18 +1,20 @@
 import React from 'react';
-import './style/App.scss';
-
+//import './style/App.scss';
 // Components
-import DesktopNav from './components/navbar/desktop-nav';
-import MobileNav from './components/navbar/mobile-nav';
-import Backdrop from "./components/navbar/backdrop";
-import Hero from './components/hero/hero';
-import Portfolio from "./components/portfolio/portfolio";
-import Partners from "./components/partners/partners";
-import About from "./components/about/about";
-import Blog from "./components/blog/blog";
-import Contact from "./components/contact/contact";
+//import DesktopNav from './components/navbar/desktop-nav';
+//import MobileNav from './components/navbar/mobile-nav';
+//import Backdrop from "./components/navbar/backdrop";
+//import Hero from './components/hero/hero';
+//import Portfolio from "./components/portfolio/portfolio";
+//import Partners from "./components/partners/partners";
+//import About from "./components/about/about";
+//import Blog from "./components/blog/blog";
+//import Contact from "./components/contact/contact";
 import Footer from "./components/footer/footer";
- 
+import { Routes } from './routes/index'
+
+import 'bootstrap/dist/css/bootstrap.min.css'; 
+
 class App extends React.Component {
   state = {
     userIsScrolled: false,
@@ -45,34 +47,12 @@ class App extends React.Component {
 
   render() {
     // BACKDROP RENDER
-    let backdrop = <Backdrop closeMobileMenu={this.closeMobileMenu} />;
-    if (this.state.mobileNavbarOpen) {
-      backdrop = (
-        <Backdrop closeMobileMenu={this.closeMobileMenu} isOpen={true} />
-      );
-    }
-    // MOBILE NAVBAR RENDER
-    let mobileNavbar = <MobileNav />;
-    if (this.state.mobileNavbarOpen) {
-      mobileNavbar = (
-        <MobileNav isOpen={true} closeMobileMenu={this.closeMobileMenu} />
-      );
-    }
-
+    //
     return (
-      <div className="App">
-        {mobileNavbar}
-        {backdrop}
-        <DesktopNav
-          userIsScrolled={this.state.userIsScrolled}
-          mobileMenuOpen={this.mobileMenuOpen}
-        />
-        <Hero />
-        <Portfolio />
-        <About />
-        <Contact />
-        <Footer />
-      </div>
+      <>
+      <Routes/>
+      <Footer/>
+      </>
     );
   }
 }

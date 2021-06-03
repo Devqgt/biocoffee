@@ -10,11 +10,12 @@
     display: flex;
     align-items: center;
 
-    p {
-      color: $white-color;
-      font-size: 1.1rem;
-      margin-left: 30px;
-    }
+  }
+  p {
+    color: $white-color;
+    font-size: 1rem;
+    color: #fff;
+    margin-left: 30px;
   }
 
   .back-to-top {
