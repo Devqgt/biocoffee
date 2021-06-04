@@ -8,12 +8,8 @@ import {
 } from "react-router-dom";
 
 import LogoImg from '../assets/navbar/logo.svg'
+import { Home } from '../components/Home/Home'
 import { About } from '../components/about/about'
-
-const Home = () => {
-  return <h1>Inicio</h1>
-}
-
 
 const Productos = () => {
   return <h1>Productos</h1>

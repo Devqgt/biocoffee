@@ -17,13 +17,16 @@ export const Banner = () => {
   },[])
 
   return (
-    <div id="carouselExampleSlidesOnly" className="carousel slide" data-bs-ride="carousel" ref={carouselRef} >
+    <div id="" className="carousel slide" data-bs-ride="carousel" ref={carouselRef} >
       <div className="carousel-inner"> 
         <div className="carousel-item active">
           <img src={header2} className="d-block w-100" alt="banner biocoffe"/>
         </div>
-        <div className="carousel-item ">
-          <img src={header2} className="d-block w-100" alt="banner biocoffe"/>
+      </div>
+      <div className="container">
+        <div className="box-language p-1">
+          <button className="btn btn-lang rounded-0 btn-dark">EN</button>
+          <button className="btn btn-lang rounded-0 btn-dark ms-1">ES</button>
         </div>
       </div>
     </div>

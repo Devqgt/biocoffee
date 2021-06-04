@@ -41,7 +41,6 @@ export default about;*/
 export const About = () => {
   return (
     <>
-      <Banner/>
       <Body/>
     </>
   )
